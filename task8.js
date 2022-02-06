@@ -9,7 +9,7 @@ function convertMinutestoHour(numMinutes){
     }else if (numMinutes % 60 === 0){
         var numHours = numMinutes / 60;
         if(numMinutes == 60){
-            convertedMinutes = "1 hour, 0 minutes.";
+            convertedMinutes = "0 hours, 60 minutes.";
         }else{
             convertedMinutes = numHours + " hours, 0 minutes.";
         }
