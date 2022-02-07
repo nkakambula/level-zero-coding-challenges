@@ -1,5 +1,5 @@
 function convertMinutestoHour(numMinutes){
-    var convertedMinutes;
+    let convertedMinutes;
     if (numMinutes < 60){
         if(numMinutes === 1){
             convertedMinutes = "0 hours, " + numMinutes + " minute.";
@@ -7,16 +7,16 @@ function convertMinutestoHour(numMinutes){
             convertedMinutes = "0 hours, "+ numMinutes + "minutes.";
         }
     }else if (numMinutes % 60 === 0){
-        var numHours = numMinutes / 60;
+        const numHours = numMinutes / 60;
         if(numMinutes == 60){
             convertedMinutes = "0 hours, 60 minutes.";
         }else{
             convertedMinutes = numHours + " hours, 0 minutes.";
         }
     }else{
-        var numHours = Math.floor(numMinutes / 60);
-        var remainingMinutes = numMinutes % 60;
-        if(numHours = 1){
+        const numHours = Math.floor(numMinutes / 60);
+        const remainingMinutes = numMinutes % 60;
+        if(numHours === 1){
             if (remainingMinutes === 1){
                 convertedMinutes = "1 hour, 1 minute.";
             }else{
